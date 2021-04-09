@@ -1,0 +1,48 @@
+$back: lightgray;
+body {
+  background: $back;
+}
+header {
+  position: relative;
+  h1 {
+    text-align: center;
+    font-size: 6em;
+    color: #c6c6c6;
+  }
+  h3 {
+    text-align: center;
+    color: darkslategray;
+  }
+}
+main {
+  padding-bottom: 10em;
+  h2 {
+    font: bold;
+    color: darkslategray;
+  }
+  p {
+    color: slategray;
+  }
+}
+.main-wrapper {
+  height: 500px;
+}
+.heroImg {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+section {
+  padding: 20px;
+  img {
+    height: 700px;
+  }
+}
+p {
+  opacity: 0;
+  transition: opacity 2s linear;
+}
+.in-view-p {
+  opacity: 1;
+}

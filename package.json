@@ -1,0 +1,26 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.2.9",
+    "sass": "^1.32.8",
+    "tailwindcss": "^2.1.1"
+  },
+  "dependencies": {
+    "bro": "0.0.3",
+    "gsap": "^3.6.1",
+    "locomotive-scroll": "^4.1.1"
+  }
+}
