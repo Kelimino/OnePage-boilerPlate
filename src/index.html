@@ -7,19 +7,32 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <div class="cursor">
-      <span class="zoom">zoom</span
-      ><span class="scroll"
-        ><img src="/images/down-arrow.svg" alt="scroll down"
-      /></span>
-    </div> -->
     <div data-scroll-container id="main">
-      <nav><a href="/about.html">About</a></nav>
+      <div class="cursor">
+        <span class="zoom">zoom</span
+        ><span class="scroll"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 17l-4 4m0 0l-4-4m4 4V3"
+            /></svg
+        ></span>
+      </div>
+
       <img
         src="images/text.svg"
         alt="text"
         class="circle absolute top-10 left-10 w-24 z-10"
       />
+      <nav><a href="/about.html"></a></nav>
       <header data-scroll-section class="relative">
         <h1 data-scroll data-scroll-sticky data-scroll-target="#main">
           Desert Eagle
@@ -98,7 +111,6 @@
           </div>
         </div>
       </header>
-      -->
       <main class="py-20 container">
         <section
           data-scroll-section

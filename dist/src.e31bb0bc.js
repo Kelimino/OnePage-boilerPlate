@@ -10573,7 +10573,6 @@ imgAll.forEach(function (img) {
   });
 });
 var header = document.querySelector('header');
-console.log(header);
 header.addEventListener('mouseover', function () {
   mouseCursor.classList.add('cursorHeader');
 });
