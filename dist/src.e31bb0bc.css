@@ -153,8 +153,27 @@ p {
   border: solid 1px transparent;
   padding: 1em;
 }
-.cursorImg span {
+.cursorImg .zoom {
   display: block;
+}
+.cursorImg .scroll {
+  display: none;
+}
+
+.cursorHeader {
+  background: white;
+  transform: translate(-50%, -50%) scale(2);
+  border: solid 1px transparent;
+  padding: 1em;
+}
+.cursorHeader .zoom {
+  display: none;
+}
+.cursorHeader .scroll {
+  display: block;
+}
+.cursorHeader .scroll svg {
+  height: 8px;
 }
 /*! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
 

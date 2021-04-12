@@ -78,7 +78,27 @@ p {
   transform: translate(-50%, -50%) scale(2);
   border: solid 1px transparent;
   padding: 1em;
-  span {
+  .zoom {
     display: block;
+  }
+  .scroll {
+    display: none;
+  }
+}
+
+.cursorHeader {
+  background: white;
+  transform: translate(-50%, -50%) scale(2);
+  border: solid 1px transparent;
+  padding: 1em;
+  .zoom {
+    display: none;
+  }
+  .scroll {
+    display: block;
+
+    svg {
+      height: 8px;
+    }
   }
 }

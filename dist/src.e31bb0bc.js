@@ -10560,15 +10560,25 @@ function cursor(e) {
   mouseCursor.style.left = e.pageX + 'px';
 }
 
-var imgAll = document.querySelectorAll('img');
+var imgAll = document.querySelectorAll('.container img');
 console.log(imgAll);
 imgAll.forEach(function (img) {
   img.addEventListener('mouseover', function () {
     mouseCursor.classList.add('cursorImg');
+    img.style.transform = 'scale(1.4)';
   });
   img.addEventListener('mouseleave', function () {
     mouseCursor.classList.remove('cursorImg');
+    img.style.transform = 'scale(1)';
   });
+});
+var header = document.querySelector('header');
+console.log(header);
+header.addEventListener('mouseover', function () {
+  mouseCursor.classList.add('cursorHeader');
+});
+header.addEventListener('mouseleave', function () {
+  mouseCursor.classList.remove('cursorHeader');
 });
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
@@ -10687,7 +10697,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49665" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49366" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

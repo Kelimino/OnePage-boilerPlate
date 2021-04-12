@@ -7,7 +7,9 @@
     <title>Document</title>
   </head>
     <div data-scroll-container id="main">
-      <div class="cursor"><span>zoom</span></div>
+      <div class="cursor"><span class="zoom">zoom</span><span class="scroll"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3" />
+</svg></span></div>
          <img src="images/text.svg" alt="text" class="circle absolute top-10 left-10 w-24 z-10 ">
         <header data-scroll-section class="relative">
           <h1 data-scroll data-scroll-sticky data-scroll-target="#main" >Desert Eagle</h1>
@@ -64,10 +66,10 @@
           </div>
 
         </header>
-        <main class="py-20">
+        <main class="py-20 container">
         <section data-scroll-section data-scroll-class="in-view" data-scroll-target  class="sct grid grid-cols-2 h-screen">
-          <div class="img-wrapper relative overflow-hidden w-full">
-            <img src="images/img2.jpg" alt="img" class="absolute w-3/4 object-cover object-bottom"  data-scroll data-scroll-speed="3">
+          <div class="img-wrapper relative overflow-hidden w-1/2 h-4/6">
+            <img src="images/img2.jpg" alt="img" class="absolute w-full object-cover object-bottom"  data-scroll data-scroll-speed="3">
           </div>
             
             <div class="content p-10">
@@ -92,8 +94,8 @@
             ratione quibusdam temporibus!
           </p>
             </div>
-            <div class="img-wrapper relative overflow-hidden w-full" >
-            <img src="images/img3.jpg" alt="img" class="absolute w-3/4 object-cover object-bottom" data-scroll data-scroll-speed="3">
+            <div class="img-wrapper relative overflow-hidden w-1/2" >
+            <img src="images/img3.jpg" alt="img" class="absolute w-full object-cover object-bottom" data-scroll data-scroll-speed="3">
           </div>
           
         </section>
