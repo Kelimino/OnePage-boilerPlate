@@ -7,12 +7,124 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Abput page</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laborum
-      at, accusamus animi reiciendis quibusdam reprehenderit modi possimus
-      exercitationem sapiente quo ad, distinctio totam natus cupiditate adipisci
-      quasi assumenda consectetur.
-    </p>
+    <div data-scroll-container id="main">
+      <nav><a href="/index.html">Home</a></nav>
+      <h1>About page</h1>
+      <section
+        data-scroll-section
+        data-scroll-class="in-view"
+        data-scroll-target
+        class="sct grid grid-cols-2 h-screen"
+      >
+        <div class="img-wrapper relative overflow-hidden w-1/2 h-4/6">
+          <img
+            src="images/img2.jpg"
+            alt="img"
+            class="absolute w-full object-cover object-bottom"
+            data-scroll
+            data-scroll-speed="3"
+          />
+        </div>
+
+        <div class="content p-10">
+          <h2
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="1"
+            class="text-3xl text-red-300 font-bold mb-10 bg-gray-50 p-6 w-full"
+          >
+            Hello World
+          </h2>
+          <p
+            data-scroll
+            data-scroll-speed="2"
+            data-scroll-class="in-view-p"
+            data-scroll-repeat="true"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            necessitatibus, soluta culpa qui eos magni perspiciatis facere error
+            recusandae autem ullam magnam quod, enim provident quos nulla
+            ratione quibusdam temporibus!
+          </p>
+        </div>
+      </section>
+      <section
+        data-scroll-section
+        data-scroll-class="in-view"
+        data-scroll-target
+        class="sct grid grid-cols-2 h-screen"
+      >
+        <div class="img-wrapper relative overflow-hidden w-1/2 h-4/6">
+          <img
+            src="images/img2.jpg"
+            alt="img"
+            class="absolute w-full object-cover object-bottom"
+            data-scroll
+            data-scroll-speed="3"
+          />
+        </div>
+
+        <div class="content p-10">
+          <h2
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="1"
+            class="text-3xl text-red-300 font-bold mb-10 bg-gray-50 p-6 w-full"
+          >
+            Hello World
+          </h2>
+          <p
+            data-scroll
+            data-scroll-speed="2"
+            data-scroll-class="in-view-p"
+            data-scroll-repeat="true"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            necessitatibus, soluta culpa qui eos magni perspiciatis facere error
+            recusandae autem ullam magnam quod, enim provident quos nulla
+            ratione quibusdam temporibus!
+          </p>
+        </div>
+      </section>
+      <section
+        data-scroll-section
+        data-scroll-class="in-view"
+        data-scroll-target
+        class="sct grid grid-cols-2 h-screen"
+      >
+        <div class="img-wrapper relative overflow-hidden w-1/2 h-4/6">
+          <img
+            src="images/img2.jpg"
+            alt="img"
+            class="absolute w-full object-cover object-bottom"
+            data-scroll
+            data-scroll-speed="3"
+          />
+        </div>
+
+        <div class="content p-10">
+          <h2
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="1"
+            class="text-3xl text-red-300 font-bold mb-10 bg-gray-50 p-6 w-full"
+          >
+            Hello World
+          </h2>
+          <p
+            data-scroll
+            data-scroll-speed="2"
+            data-scroll-class="in-view-p"
+            data-scroll-repeat="true"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            necessitatibus, soluta culpa qui eos magni perspiciatis facere error
+            recusandae autem ullam magnam quod, enim provident quos nulla
+            ratione quibusdam temporibus!
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>

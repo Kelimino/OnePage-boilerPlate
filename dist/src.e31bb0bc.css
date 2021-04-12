@@ -172,7 +172,7 @@ p {
 .cursorHeader .scroll {
   display: block;
 }
-.cursorHeader .scroll svg {
+.cursorHeader .scroll img {
   height: 8px;
 }
 /*! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
