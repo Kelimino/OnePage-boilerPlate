@@ -10559,6 +10559,17 @@ function cursor(e) {
   mouseCursor.style.top = e.pageY + 'px';
   mouseCursor.style.left = e.pageX + 'px';
 }
+
+var imgAll = document.querySelectorAll('img');
+console.log(imgAll);
+imgAll.forEach(function (img) {
+  img.addEventListener('mouseover', function () {
+    mouseCursor.classList.add('cursorImg');
+  });
+  img.addEventListener('mouseleave', function () {
+    mouseCursor.classList.remove('cursorImg');
+  });
+});
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 

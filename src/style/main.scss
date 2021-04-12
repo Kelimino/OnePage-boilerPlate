@@ -1,6 +1,7 @@
 $back: lightgray;
 body {
   background: $back;
+  cursor: none;
 }
 header {
   position: relative;
@@ -48,4 +49,36 @@ p {
 }
 .circle {
   mix-blend-mode: luminosity;
+}
+
+.cursor {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  z-index: 50;
+  border-radius: 100%;
+  border: solid 1px black;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s linear;
+
+  span {
+    display: none;
+    content: "zoom";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 8px;
+  }
+}
+.cursorImg {
+  background: white;
+  transform: translate(-50%, -50%) scale(2);
+  border: solid 1px transparent;
+  padding: 1em;
+  span {
+    display: block;
+  }
 }
