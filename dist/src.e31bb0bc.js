@@ -10551,6 +10551,14 @@ var bro = function bro(greeting) {
 };
 
 exports.bro = bro;
+},{}],"mouse.js":[function(require,module,exports) {
+var mouseCursor = document.querySelector('.cursor');
+window.addEventListener('mousemove', cursor);
+
+function cursor(e) {
+  mouseCursor.style.top = e.pageY + 'px';
+  mouseCursor.style.left = e.pageX + 'px';
+}
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -10567,6 +10575,8 @@ var _ScrollTrigger = require("gsap/ScrollTrigger");
 var _locomotiveScroll = _interopRequireDefault(require("locomotive-scroll"));
 
 var _main2 = require("./main");
+
+require("./mouse.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10638,7 +10648,7 @@ tl.to('.sct2', {
   autoAlpha: 0,
   duration: 4
 });
-},{"./style/scroll.css":"style/scroll.css","./style/main.scss":"style/main.scss","./style/tailwind.css":"style/tailwind.css","gsap":"../node_modules/gsap/index.js","gsap/ScrollTrigger":"../node_modules/gsap/ScrollTrigger.js","locomotive-scroll":"../node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js","./main":"main.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./style/scroll.css":"style/scroll.css","./style/main.scss":"style/main.scss","./style/tailwind.css":"style/tailwind.css","gsap":"../node_modules/gsap/index.js","gsap/ScrollTrigger":"../node_modules/gsap/ScrollTrigger.js","locomotive-scroll":"../node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js","./main":"main.js","./mouse.js":"mouse.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

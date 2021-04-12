@@ -12,6 +12,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 //IMPORT SCRIPT FILES
 import { bro } from './main'
+import './mouse.js'
 
 
 //DOM FUNCTION & ANIMATION
