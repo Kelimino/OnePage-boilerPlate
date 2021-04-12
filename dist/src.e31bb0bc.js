@@ -10606,13 +10606,26 @@ _ScrollTrigger.ScrollTrigger.addEventListener("refresh", function () {
 _ScrollTrigger.ScrollTrigger.refresh(); //ANIMATION
 
 
+var rotate = _gsap.gsap.timeline({
+  scrollTrigger: {
+    trigger: 'header',
+    scroller: "[data-scroll-container]",
+    scrub: true,
+    start: "top 50%",
+    end: "10000"
+  }
+});
+
+rotate.to('.circle', {
+  rotate: "360deg"
+});
+
 var tl = _gsap.gsap.timeline({
   scrollTrigger: {
     trigger: '.sct2',
     scroller: "[data-scroll-container]",
     scrub: true,
-    start: "top 50%",
-    markers: true
+    start: "top 50%"
   }
 });
 
@@ -10653,7 +10666,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53101" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49665" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

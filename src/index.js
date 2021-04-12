@@ -43,13 +43,23 @@ ScrollTrigger.refresh();
 
 //ANIMATION
 
+const rotate = gsap.timeline({
+    scrollTrigger: {
+        trigger: 'header',
+        scroller: "[data-scroll-container]",
+    scrub: true,
+    start: "top 50%",
+    end:"10000"
+    },
+})
+rotate.to('.circle', {rotate: "360deg" })
+    
 const tl = gsap.timeline({
     scrollTrigger: {
         trigger: '.sct2',
         scroller: "[data-scroll-container]",
     scrub: true,
-    start: "top 50%",
-        markers: true
+    start: "top 50%"
     },
 })
 tl.to('.sct2', { background: "#ff2600", duration: 4 })
