@@ -66,3 +66,16 @@ const tl = gsap.timeline({
 tl.to('.sct2', { background: "#ff2600", duration: 4 })
     .add(function () { console.log('Woohoo!') })
     .to('.sct2 h2', { autoAlpha: 0, duration: 4 })
+
+
+
+import Highway from '@dogstudio/highway';
+import Fade from './transition'
+
+const H = new Highway.Core({  
+  transitions: {
+    default: Fade
+  }
+});
+
+
