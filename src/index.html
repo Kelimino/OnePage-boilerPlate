@@ -17,7 +17,7 @@
         <li><a href="./about.html">About</a></li>
       </ul>
     </nav>
-    <div data-scroll-container id="main">
+    <div>
       <div class="cursor">
         <span class="zoom">zoom</span
         ><span class="scroll"
@@ -30,86 +30,87 @@
         alt="text"
         class="circle absolute top-10 left-10 w-24 z-10"
       />
-      <header data-scroll-section class="relative">
-        <h1 data-scroll data-scroll-sticky data-scroll-target="#main">
-          Desert Eagle
-        </h1>
-        <h3
-          data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="1"
-        ></h3>
-        <div class="main-wrapper grid grid-cols-6 p-8 opacity-50">
-          <div
-            class="single-wrapper h-full overflow-hidden mr-5"
-            data-scroll
-            data-scroll-speed="1"
-          >
-            <img
-              src="images/img.jpg"
-              alt="img"
-              class="heroImg"
-              data-scroll
-              data-scroll-speed="2"
-            />
-          </div>
-          <div class="single-wrapper h-full overflow-hidden mr-5">
-            <img
-              src="images/img4.jpg"
-              alt="img"
-              class="heroImg"
-              data-scroll
-              data-scroll-speed="1"
-            />
-          </div>
-          <div
-            class="single-wrapper h-full overflow-hidden mr-5"
-            data-scroll
-            data-scroll-speed="1"
-          >
-            <img
-              src="images/img3.jpg"
-              alt="img"
-              class="heroImg"
-              data-scroll
-              data-scroll-speed="2"
-            />
-          </div>
-          <div class="single-wrapper h-full overflow-hidden mr-5">
-            <img
-              src="images/img.jpg"
-              alt="img"
-              class="heroImg"
-              data-scroll
-              data-scroll-speed="1"
-            />
-          </div>
-          <div
-            class="single-wrapper h-full overflow-hidden mr-5"
-            data-scroll
-            data-scroll-speed="1"
-          >
-            <img
-              src="images/img7.jpg"
-              alt="img"
-              class="heroImg"
-              data-scroll
-              data-scroll-speed="2"
-            />
-          </div>
-          <div class="single-wrapper h-full overflow-hidden">
-            <img
-              src="images/img8.jpg"
-              alt="img"
-              class="heroImg"
-              data-scroll
-              data-scroll-speed="1"
-            />
-          </div>
-        </div>
-      </header>
-      <main class="py-20 container" data-router-wrapper>
+
+      <main data-router-wrapper data-scroll-container id="main">
         <section data-router-view="home" class="home">
+          <header data-scroll-section class="relative">
+            <h1 data-scroll data-scroll-sticky data-scroll-target="#main">
+              Desert Eagle
+            </h1>
+            <h3
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-speed="1"
+            ></h3>
+            <div class="main-wrapper grid grid-cols-6 p-8 opacity-50">
+              <div
+                class="single-wrapper h-full overflow-hidden mr-5"
+                data-scroll
+                data-scroll-speed="1"
+              >
+                <img
+                  src="images/img.jpg"
+                  alt="img"
+                  class="heroImg"
+                  data-scroll
+                  data-scroll-speed="2"
+                />
+              </div>
+              <div class="single-wrapper h-full overflow-hidden mr-5">
+                <img
+                  src="images/img4.jpg"
+                  alt="img"
+                  class="heroImg"
+                  data-scroll
+                  data-scroll-speed="1"
+                />
+              </div>
+              <div
+                class="single-wrapper h-full overflow-hidden mr-5"
+                data-scroll
+                data-scroll-speed="1"
+              >
+                <img
+                  src="images/img3.jpg"
+                  alt="img"
+                  class="heroImg"
+                  data-scroll
+                  data-scroll-speed="2"
+                />
+              </div>
+              <div class="single-wrapper h-full overflow-hidden mr-5">
+                <img
+                  src="images/img.jpg"
+                  alt="img"
+                  class="heroImg"
+                  data-scroll
+                  data-scroll-speed="1"
+                />
+              </div>
+              <div
+                class="single-wrapper h-full overflow-hidden mr-5"
+                data-scroll
+                data-scroll-speed="1"
+              >
+                <img
+                  src="images/img7.jpg"
+                  alt="img"
+                  class="heroImg"
+                  data-scroll
+                  data-scroll-speed="2"
+                />
+              </div>
+              <div class="single-wrapper h-full overflow-hidden">
+                <img
+                  src="images/img8.jpg"
+                  alt="img"
+                  class="heroImg"
+                  data-scroll
+                  data-scroll-speed="1"
+                />
+              </div>
+            </div>
+          </header>
           <div
             data-scroll-section
             data-scroll-class="in-view"
