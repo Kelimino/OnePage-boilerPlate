@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/scroll.css" />
+    <link rel="stylesheet" href="./style/tailwind.css" />
+    <link rel="stylesheet" href="./style/main.scss" />
+
+    <title>Home</title>
   </head>
   <body>
+    <nav class="absolute top-10 right-10 z-40">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </nav>
     <div data-scroll-container id="main">
-      <!-- <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="">service</a></li>
-          <li><a href="">contact</a></li>
-        </ul>
-      </nav> -->
       <div class="cursor">
         <span class="zoom">zoom</span
         ><span class="scroll"
@@ -105,82 +108,85 @@
           </div>
         </div>
       </header>
-      <main class="py-20 container">
-        <section
-          data-scroll-section
-          data-scroll-class="in-view"
-          data-scroll-target
-          class="sct grid grid-cols-2 h-screen"
-        >
-          <div class="img-wrapper relative overflow-hidden w-1/2 h-4/6">
-            <img
-              src="images/img2.jpg"
-              alt="img"
-              class="absolute w-full object-cover object-bottom"
-              data-scroll
-              data-scroll-speed="3"
-            />
-          </div>
+      <main class="py-20 container" data-router-wrapper>
+        <section data-router-view="home" class="home">
+          <div
+            data-scroll-section
+            data-scroll-class="in-view"
+            data-scroll-target
+            class="sct grid grid-cols-2 h-screen"
+          >
+            <div class="img-wrapper relative overflow-hidden w-1/2 h-4/6">
+              <img
+                src="images/img2.jpg"
+                alt="img"
+                class="absolute w-full object-cover object-bottom"
+                data-scroll
+                data-scroll-speed="3"
+              />
+            </div>
 
-          <div class="content p-10">
-            <h2
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-speed="1"
-              class="text-3xl text-red-300 font-bold mb-10 bg-gray-50 p-6 w-full"
-            >
-              Hello World
-            </h2>
-            <p
-              data-scroll
-              data-scroll-speed="2"
-              data-scroll-class="in-view-p"
-              data-scroll-repeat="true"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              necessitatibus, soluta culpa qui eos magni perspiciatis facere
-              error recusandae autem ullam magnam quod, enim provident quos
-              nulla ratione quibusdam temporibus!
-            </p>
+            <div class="content p-10">
+              <h2
+                data-scroll
+                data-scroll-direction="horizontal"
+                data-scroll-speed="1"
+                class="text-3xl text-red-300 font-bold mb-10 bg-gray-50 p-6 w-full"
+              >
+                Hello World
+              </h2>
+              <p
+                data-scroll
+                data-scroll-speed="2"
+                data-scroll-class="in-view-p"
+                data-scroll-repeat="true"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                necessitatibus, soluta culpa qui eos magni perspiciatis facere
+                error recusandae autem ullam magnam quod, enim provident quos
+                nulla ratione quibusdam temporibus!
+              </p>
+            </div>
           </div>
-        </section>
-        <section
-          data-scroll-section
-          data-scroll-class="in-view"
-          class="sct2 grid grid-cols-2 h-screen"
-        >
-          <div class="content p-10">
-            <h2
-              data-scroll
-              data-scroll-speed="1"
-              class="text-3xl text-gray-800 font-bold mb-10"
-            >
-              Hello World
-            </h2>
-            <p
-              data-scroll
-              data-scroll-speed="2"
-              data-scroll-class="in-view-p"
-              data-scroll-repeat="true"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              necessitatibus, soluta culpa qui eos magni perspiciatis facere
-              error recusandae autem ullam magnam quod, enim provident quos
-              nulla ratione quibusdam temporibus!
-            </p>
-          </div>
-          <div class="img-wrapper relative overflow-hidden w-1/2">
-            <img
-              src="images/img3.jpg"
-              alt="img"
-              class="absolute w-full object-cover object-bottom"
-              data-scroll
-              data-scroll-speed="3"
-            />
+          <div
+            data-scroll-section
+            data-scroll-class="in-view"
+            data-scroll-target
+            class="sct2 grid grid-cols-2 h-screen"
+          >
+            <div class="content p-10">
+              <h2
+                data-scroll
+                data-scroll-speed="1"
+                class="text-3xl text-gray-800 font-bold mb-10"
+              >
+                Hello World
+              </h2>
+              <p
+                data-scroll
+                data-scroll-speed="2"
+                data-scroll-class="in-view-p"
+                data-scroll-repeat="true"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                necessitatibus, soluta culpa qui eos magni perspiciatis facere
+                error recusandae autem ullam magnam quod, enim provident quos
+                nulla ratione quibusdam temporibus!
+              </p>
+            </div>
+            <div class="img-wrapper relative overflow-hidden w-1/2">
+              <img
+                src="images/img3.jpg"
+                alt="img"
+                class="absolute w-full object-cover object-bottom"
+                data-scroll
+                data-scroll-speed="3"
+              />
+            </div>
           </div>
         </section>
       </main>
     </div>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

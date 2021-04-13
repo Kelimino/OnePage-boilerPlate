@@ -1,0 +1,112 @@
+body {
+  background: lightgray;
+  cursor: none;
+}
+
+header {
+  position: relative;
+}
+header h1 {
+  text-align: center;
+  font-size: 6em;
+  color: #c6c6c6;
+}
+header h3 {
+  text-align: center;
+  color: darkslategray;
+}
+
+main {
+  padding-bottom: 10em;
+}
+main h2 {
+  font: bold;
+  color: darkslategray;
+}
+main p {
+  color: slategray;
+}
+
+.main-wrapper {
+  height: 500px;
+}
+
+.heroImg {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+section {
+  padding: 20px;
+}
+section img {
+  height: 700px;
+}
+
+p {
+  opacity: 0;
+  transition: opacity 2s linear;
+}
+
+.in-view-p {
+  opacity: 1;
+}
+
+.circle {
+  mix-blend-mode: luminosity;
+}
+
+.cursor {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  z-index: 50;
+  border-radius: 100%;
+  border: solid 1px black;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s linear;
+}
+.cursor span {
+  display: none;
+  content: "zoom";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 8px;
+}
+
+.cursorImg {
+  background: white;
+  transform: translate(-50%, -50%) scale(2);
+  border: solid 1px transparent;
+  padding: 1em;
+}
+.cursorImg .zoom {
+  display: block;
+}
+.cursorImg .scroll {
+  display: none;
+}
+
+.cursorHeader {
+  background: white;
+  transform: translate(-50%, -50%) scale(2);
+  border: solid 1px transparent;
+  padding: 1em;
+}
+.cursorHeader .zoom {
+  display: none;
+}
+.cursorHeader .scroll {
+  display: block;
+}
+.cursorHeader .scroll img {
+  height: 8px;
+}
+
+/*# sourceMappingURL=/main.3d6386d6.css.map */
