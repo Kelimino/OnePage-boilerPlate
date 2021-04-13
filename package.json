@@ -19,9 +19,9 @@
     "tailwindcss": "^2.1.1"
   },
   "dependencies": {
+    "@dogstudio/highway": "^2.2.2",
     "bro": "0.0.3",
     "gsap": "^3.6.1",
-    "Highway": "^0.2.1",
     "locomotive-scroll": "^4.1.1"
   }
 }
